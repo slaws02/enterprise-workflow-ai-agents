@@ -1,0 +1,29 @@
+L3 TEST CONFIG EXAMPLES (DEMO)
+
+Example A — HDHP Conflict
+Design:
+- Plan type: HDHP
+- Deductible: 3000
+- Preventive: 100% covered
+
+Config:
+- Office visit copay $30 before deductible
+- Preventive coded with coinsurance
+
+Example B — Accumulator Error
+Design:
+- Family deductible embedded
+- OOP 6000
+
+Config:
+- Family flag aggregate
+- OOP set to 4000
+
+Example C — Network Copy Error
+Design:
+- INN coinsurance 20%
+- OON coinsurance 40%
+
+Config:
+- INN 20%
+- OON 20%
