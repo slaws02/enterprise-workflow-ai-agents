@@ -1,0 +1,53 @@
+KNOWLEDGE DRIFT & CONFLICT DETECTION RULES — DEMO (PORTFOLIO SAFE)
+
+Purpose:
+A synthetic framework for detecting conflicting or outdated operational guidance across SOPs, job aids, and internal knowledge articles. Designed to reduce training error and inconsistency.
+
+============================================================
+DEFINITIONS
+
+Knowledge Drift:
+When a document is older or not aligned with current process, causing guidance to diverge.
+
+Conflict:
+When two sources give different instructions for the same scenario (steps, ownership, timing, requirements).
+
+============================================================
+CONFLICT TYPES TO DETECT
+
+1) STEP ORDER CONFLICT
+- Sources disagree on sequence (e.g., "configure network before ID card" vs "ID card before network")
+
+2) OWNERSHIP CONFLICT
+- Different teams listed as responsible for the same task
+
+3) REQUIREMENT CONFLICT
+- Different required inputs (e.g., one says EDI contact required, another does not)
+
+4) TIMING CONFLICT
+- Different deadlines or cutoff windows
+
+5) POLICY/PROCESS VERSION CONFLICT
+- One doc references an older version of a process, template, or requirement
+
+============================================================
+SIGNALS OF OUTDATED GUIDANCE
+
+- Mentions legacy tool names without current equivalents
+- References old effective dates or old plan years as “current”
+- Uses “temporary process” language without sunset date
+- Contradicts more recent guidance
+- Has no owner, no last-updated info, or unclear version
+
+============================================================
+OUTPUT EXPECTATIONS
+
+The agent should:
+- identify conflicts across provided excerpts
+- label conflict type
+- identify which source appears more recent (if dates are provided)
+- recommend resolution actions (e.g., escalate to process owner, update KB, retire doc)
+- propose a single consolidated “candidate procedure” when possible, marked as DRAFT
+- recommend SME validation for final adoption
+
+END OF RULES
