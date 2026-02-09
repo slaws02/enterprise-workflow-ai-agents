@@ -1,0 +1,62 @@
+PLAN CONFIGURATION CONSISTENCY RULES — DEMO (PORTFOLIO SAFE)
+
+Purpose:
+Synthetic cross-check rules used to compare intended plan design vs configured plan values to detect mismatches that commonly cause claims defects, member abrasion, and audit findings.
+
+============================================================
+PRIMARY CROSS-CHECK AREAS
+
+1) COST SHARE ALIGNMENT
+- Copay vs coinsurance must match plan design summary
+- Coinsurance percentages must match benefit schedule
+- No copay-before-deductible if plan is marked HDHP (unless preventive exception stated)
+
+2) DEDUCTIBLE & OOP LOGIC
+- Deductible amounts must match design
+- OOP maximum must be >= deductible
+- Family embedded vs aggregate must match design intent
+- Cross-accumulator flags must match design notes
+
+3) NETWORK TIER RULES
+- INN vs OON cost share must not be identical unless explicitly intended
+- Tier labels must match member materials
+- OON coverage presence must match plan type
+
+4) PREVENTIVE COVERAGE
+- Preventive must show $0 member cost share when marked covered at 100%
+- Preventive must bypass deductible if design says so
+
+5) AUTHORIZATION / UM RULES
+- Prior authorization flags must align with listed service categories
+- No PA flags without service scope reference
+
+6) PHARMACY / MEDICAL INTEGRATION
+- Accumulator linkage flags must match integration notes
+- Rx deductible linkage must match design summary
+
+7) LIMITS & MAXIMUMS
+- Visit limits must match schedule
+- Dollar maximums must match riders/addenda
+
+============================================================
+COMMON DEFECT PATTERNS
+
+- Deductible correct but OOP incorrect
+- INN correct but OON copied incorrectly
+- Copay entered instead of coinsurance
+- Embedded family flag missing
+- Preventive coded with standard cost share
+- PA flag applied globally instead of by service
+- Rx accumulators not linked when required
+
+============================================================
+OUTPUT EXPECTATIONS
+
+Agent should:
+- list mismatches clearly
+- label severity (High / Medium / Low)
+- explain why mismatch matters
+- recommend correction checks
+- recommend SME review for high-severity items
+
+END OF RULES
