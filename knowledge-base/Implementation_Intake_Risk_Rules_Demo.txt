@@ -1,0 +1,56 @@
+IMPLEMENTATION INTAKE RISK RULES — DEMO (PORTFOLIO SAFE)
+
+Purpose:
+A synthetic framework to identify common intake gaps and risk drivers that cause implementation delays, rework, and downstream defects in plan sponsor services / benefits administration environments.
+
+============================================================
+REQUIRED INTAKE FIELDS (MINIMUM VIABLE INTAKE)
+
+- Effective date and benefit year
+- Plan type (HMO/PPO/EPO/HDHP)
+- Funding type (ASO/Self-insured vs Fully insured)
+- Network selection and tiering (IN/OON rules)
+- Benefit schedule summary (copays/coinsurance/deductible/OOP)
+- Accumulator logic (embedded vs aggregate; cross-accumulator rules)
+- Prior authorization / UM rule changes (if any)
+- Eligibility rules (employee classes, dependents, waiting periods)
+- Enrollment method (834 EDI vs portal/manual)
+- Vendor carve-outs (PBM, dental, vision, specialty vendors)
+- ID card requirements (display fields, pharmacy fields if applicable)
+- Sponsor reporting requirements (eligibility, claims, finance reports)
+
+============================================================
+HIGH-RISK FLAGS (COMMON SOURCES OF REWORK)
+
+- Missing or conflicting effective date / benefit year
+- Missing network selection or unclear OON rules
+- Preventive coverage not explicitly stated
+- Deductible and OOP not aligned with service cost share
+- Family accumulator logic unclear (embedded vs aggregate)
+- Pharmacy integration unclear (medical vs Rx accumulator linkage)
+- UM/prior auth changes listed without code/service definitions
+- Eligibility classes ambiguous (e.g., full-time definition missing)
+- EDI timeline missing or no trading partner contacts
+- Multiple carve-outs without clear responsibility boundaries
+- Sponsor requires custom reporting without scope definition
+
+============================================================
+DEPENDENCY RULES
+
+- Do not begin configuration until plan design + fees are approved.
+- Do not finalize accumulators until deductible/OOP logic is confirmed.
+- Do not start EDI testing until contact list + layout spec is confirmed.
+- Do not finalize member materials until network and cost share are confirmed.
+
+============================================================
+OUTPUT EXPECTATIONS
+
+The agent should:
+- identify missing required fields
+- flag high-risk conditions
+- list dependencies
+- recommend next best actions
+- produce an executive-friendly risk summary
+- recommend escalation when gaps are material
+
+END OF FRAMEWORK
