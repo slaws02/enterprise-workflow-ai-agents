@@ -1,0 +1,72 @@
+CASE COMPLEXITY TRIAGE RUBRIC — DEMO (PORTFOLIO SAFE)
+
+Purpose:
+A synthetic scoring rubric to triage incoming plan sponsor services / implementation operations cases by complexity and route them appropriately. Designed to improve throughput, reduce escalations, and match work to skill level.
+
+============================================================
+INPUTS THE TRIAGE AGENT SHOULD LOOK FOR
+
+- Case type (implementation change, renewal update, eligibility, billing, reporting, ID card, vendor integration)
+- Deadline / effective date proximity
+- Number of impacted members / groups
+- Number of systems or teams involved
+- Presence of carve-outs / vendors
+- Whether configuration changes are required
+- Whether EDI changes are required
+- Whether compliance/regulatory review is required
+- Whether prior defects/escalations exist for the sponsor
+- Clarity of request (clear requirements vs ambiguous)
+
+============================================================
+COMPLEXITY SCORING (0–100)
+
+Add points when present:
+
+A) Urgency (0–20)
+- Effective date within 14 days: +20
+- Within 30 days: +10
+- >30 days: +0
+
+B) Scope (0–20)
+- Multiple groups or multiple plan options: +20
+- Single group with multiple benefit components: +10
+- Single simple change: +0
+
+C) Cross-Team Dependencies (0–20)
+- Requires 3+ teams (config + EDI + billing + reporting): +20
+- Requires 2 teams: +10
+- Single team: +0
+
+D) Ambiguity / Missing Intake (0–20)
+- Requirements unclear or missing key info: +20
+- Partial clarity: +10
+- Clear request: +0
+
+E) Compliance / Risk (0–20)
+- State mandate / legal language / audit exposure: +20
+- Moderate risk (member impact, large dollar): +10
+- Low risk: +0
+
+============================================================
+ROUTING RULES (BASED ON SCORE)
+
+0–25: Tier 1 / Standard Queue
+- Routine updates, clear requirements, low dependencies
+
+26–60: Tier 2 / Senior Analyst Queue
+- Multi-step updates, some ambiguity, 2-team dependencies
+
+61–100: Tier 3 / SME + Program Lead Review
+- High urgency, high scope, multi-team, compliance risk, unclear intake
+
+============================================================
+OUTPUT EXPECTATIONS
+
+The agent should:
+- produce a complexity score and reasoning
+- recommend queue/tier routing
+- list missing information
+- list next actions to de-risk the case
+- recommend escalation when score >= 61 or compliance risk is present
+
+END OF RUBRIC
