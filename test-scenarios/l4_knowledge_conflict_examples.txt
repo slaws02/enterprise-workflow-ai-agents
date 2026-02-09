@@ -1,0 +1,17 @@
+L4 KNOWLEDGE CONFLICT EXAMPLES (DEMO)
+
+Source A (Updated 2025-11-15):
+- Step 1: Confirm network selection
+- Step 2: Configure benefits and accumulators
+- Step 3: Begin ID card setup after benefit sign-off
+- Owner: Implementation Ops
+
+Source B (Updated 2024-02-10):
+- Step 1: Start ID card template setup at kickoff
+- Step 2: Configure network after ID cards drafted
+- Owner: Client Services
+
+Source C (No date):
+- EDI testing can begin without a finalized contact list
+- “Temporary process” for renewals
+- References “LegacyToolX” for eligibility uploads
