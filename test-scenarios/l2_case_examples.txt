@@ -1,0 +1,22 @@
+L2 TEST CASE EXAMPLES (DEMO)
+
+Case 1 — Routine (Tier 1 candidate)
+- Case type: ID card display update
+- Sponsor: single group
+- Change: update copay text field
+- Effective date: 90 days out
+- Dependencies: single team
+
+Case 2 — Moderate (Tier 2 candidate)
+- Case type: renewal benefit update
+- Sponsor: single group, 3 plan options
+- Effective date: 30 days out
+- Requires: benefit config + member materials update
+- Intake: mostly complete
+
+Case 3 — Complex (Tier 3 candidate)
+- Case type: mid-year benefit change + eligibility class change + EDI adjustments
+- Sponsor: multiple classes and multiple vendor carve-outs
+- Effective date: within 14 days
+- Compliance: mentions state mandate rider
+- Intake: unclear requirements, missing network/OON details, missing EDI contacts
