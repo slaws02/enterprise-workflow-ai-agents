@@ -1,0 +1,20 @@
+L1 TEST INTAKE EXAMPLES (DEMO)
+
+Example A — Incomplete Intake
+- Effective date: 01/01/2026
+- Plan type: PPO
+- Funding: ASO
+- Network: (not specified)
+- Deductible/OOP: provided
+- Accumulators: (not specified)
+- Enrollment: 834 EDI (contacts not provided)
+- Carve-outs: PBM carved out (vendor not specified)
+- UM changes: “PA required for imaging” (no codes)
+
+Example B — Conflicting Requirements
+- Effective date: 01/01/2026
+- Benefit year: 07/01 renewal (conflict)
+- Plan type: HDHP but includes copays before deductible (potential conflict)
+- OON: “same as INN” (likely conflict)
+- Preventive: not stated
+- Pharmacy: unclear accumulator linkage
