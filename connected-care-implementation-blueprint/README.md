@@ -1,25 +1,73 @@
-# Connected Care Implementation Blueprint Agent
+# Employer Connected-Care Implementation Blueprint Agent
 
-A portfolio demonstration of an AI-enabled, multi-source implementation workflow for a **fictional connected-care benefit** that includes a member mobile app, connected blood-pressure monitor, and smart scale.
+A portfolio demonstration of an AI-enabled, multi-source implementation workflow for a **fictional employer-sponsored connected-health benefit** that includes a member mobile app, connected blood-pressure monitor, and smart scale.
 
-> **Synthetic demo only.** All organizations, people, requirements, devices, dates, records, and implementation scenarios in this repository are fictional. The project does not represent or reproduce the internal processes of any real healthcare, insurance, employer, device, or technology company.
+> **Synthetic demo only.** All organizations, people, employees, members, requirements, devices, dates, records, and implementation scenarios in this repository are fictional. The project does not represent or reproduce the internal processes of any real healthcare, insurance, employer, device, or technology company.
 
-## Problem this demonstrates
+## Implementation model
 
-Complex implementations rarely fail because one task is invisible. They fail because important information is distributed across contracts, CRM records, project trackers, collaboration messages, meeting notes, device-fulfillment workflows, technical integration work, and internal playbooks.
+The implementation customer is the **employer client** purchasing a connected-health program for its workforce.
 
-This agent demonstrates a workflow that can:
+```text
+Program Provider
+    │
+    └── Employer Client
+          │
+          ├── Employer Implementation
+          │     ├── Contract / scope
+          │     ├── Eligibility configuration
+          │     ├── Data integration
+          │     ├── Program configuration
+          │     ├── Employee communications
+          │     ├── Reporting
+          │     ├── Billing
+          │     └── Launch readiness
+          │
+          └── Eligible Employees
+                │
+                └── Employees who opt in become Members
+                      ├── Mobile app
+                      ├── BP monitor
+                      ├── Smart scale
+                      ├── Device fulfillment
+                      ├── Pairing / data sync
+                      └── Program participation / support
+```
 
-1. Ingest implementation context from several simulated business systems.
-2. Normalize requirements into a single requirements matrix.
-3. Detect conflicting or incomplete requirements.
-4. Generate decision questions for the implementation team.
-5. Extract actions from meeting notes.
-6. Track connected-device dependencies across fulfillment, pairing, data sync, and support.
-7. Assess launch readiness by domain.
-8. Preserve an implementation memory so users can ask why a decision exists and see supporting evidence.
+The agent's primary question is:
+
+> **What must the implementation manager resolve so the employer client can successfully launch the benefit to its eligible workforce?**
+
+Member enrollment and connected-device operations are downstream dependencies of that employer implementation.
+
+## Fictional scenario
+
+- Employer client: Summit Manufacturing Group
+- Program: Connected Health Management Benefit
+- Benefit model: Voluntary employee opt-in
+- Eligible workforce: 18,500 employees in the CRM scenario
+- Expected opt-in members: 3,700
+- Member experience: mobile connected-care app plus contracted connected devices
+- Target launch: November 1, 2026
+
+The demo intentionally includes conflicts between fictional source systems so the agent has something meaningful to reconcile.
+
+## What the agent demonstrates
+
+1. Ingest implementation context from simulated CRM, contract, project, collaboration, meeting, and playbook sources.
+2. Normalize employer implementation requirements into a single matrix.
+3. Detect conflicting or incomplete client requirements.
+4. Generate decision questions for human owners.
+5. Extract employer-launch actions from meeting notes.
+6. Track how employer-level decisions affect downstream employee enrollment and connected-device readiness.
+7. Assess employer launch readiness by domain.
+8. Preserve implementation memory so users can ask why a decision exists and see supporting evidence.
 
 ## Connected-device workflow
+
+Devices are treated as part of the **downstream enrolled-member experience**, not as the implementation customer.
+
+Employer eligibility → Employee opt-in → Member account → Device eligibility → Shipping address → Fulfillment → App access → Pairing → Readings sync → Support / replacement
 
 The fictional program includes:
 
@@ -36,8 +84,6 @@ The fictional program includes:
 - Pairing/sync support escalation
 - Replacement-device workflow
 
-The demo intentionally includes conflicts and missing information so the agent has something meaningful to reconcile.
-
 ## Multi-step agent workflow
 
 ```text
@@ -46,20 +92,20 @@ Synthetic Contract ──────┤
 Project Tracker ─────────┤
 Collaboration Messages ──┼─> Normalize ─> Reconcile ─> Decisions
 Meeting Notes ───────────┤                           ├─> Actions
-Implementation Standard ─┤                           ├─> Device Readiness
-Decision Log ────────────┘                           ├─> Launch Readiness
+Implementation Standard ─┤                           ├─> Member/Device Enablement
+Decision Log ────────────┘                           ├─> Employer Launch Readiness
                                                     └─> Implementation Memory
 ```
 
 ## Why this is an L2-style AI workflow
 
-This is not a single prompt that drafts an email. The workflow coordinates multiple sources, compares business requirements, detects ambiguity, preserves evidence, generates structured downstream work, and keeps humans responsible for approvals.
+This is not a single prompt that drafts an email. The workflow coordinates multiple sources, compares business requirements, detects ambiguity, preserves evidence, generates structured downstream work, and connects employer-level implementation decisions to downstream member operations while humans retain approval authority.
 
-The demo uses deterministic logic so it runs reliably without API keys. In a production design, the extraction and reconciliation layer could use an approved enterprise language model while retaining source citations, validation rules, access controls, and human approval gates.
+The demo uses deterministic logic so it runs reliably without API keys. In a production design, approved enterprise language models could support extraction and reconciliation while retaining citations, validation rules, access controls, and human approval gates.
 
 ## Human-in-the-loop guardrails
 
-The agent can recommend actions, but it does **not** decide who is eligible, change launch dates, contact members, ship or replace devices, modify source systems, approve client requirements, or invent answers when sources disagree.
+The agent can recommend actions, but it does **not** decide employer eligibility, enroll employees, change launch dates, contact employees or members, ship or replace devices, modify source systems, approve client requirements, or invent answers when sources disagree.
 
 ## Run locally
 
