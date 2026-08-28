@@ -1,0 +1,10 @@
+[
+  {"task":"Eligibility population mapping","domain":"Eligibility","status":"Complete","owner":"Implementation","due":"2026-09-05","dependency":""},
+  {"task":"Approve device fulfillment file specification","domain":"Devices","status":"In Progress","owner":"Client + Operations","due":"2026-09-15","dependency":"Shipping address schema approval"},
+  {"task":"Complete test device shipment","domain":"Devices","status":"Blocked","owner":"Operations","due":"2026-09-19","dependency":"Device fulfillment file specification"},
+  {"task":"Configure member mobile app tenant","domain":"App","status":"Complete","owner":"Product Operations","due":"2026-09-07","dependency":""},
+  {"task":"Validate connected-device readings ingestion","domain":"Data Integration","status":"Blocked","owner":"Technical Integration","due":"2026-09-18","dependency":"Sample test member IDs and device readings"},
+  {"task":"Approve member launch communications","domain":"Communications","status":"In Progress","owner":"Client + Communications","due":"2026-09-22","dependency":"Communication ownership decision"},
+  {"task":"Configure billing","domain":"Billing","status":"Not Started","owner":"Billing Operations","due":"2026-10-01","dependency":"Final eligible population"},
+  {"task":"Launch readiness review","domain":"Launch","status":"Not Started","owner":"Implementation","due":"2026-10-20","dependency":"All critical launch criteria"}
+]
