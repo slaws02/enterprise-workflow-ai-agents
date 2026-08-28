@@ -41,6 +41,26 @@ st.markdown(f"**Assessment date:** {assessment_date}")
 if assessment.blockers: st.error("Employer launch readiness has unresolved blockers. The agent recommends action; final decisions remain human-owned.")
 else: st.success("No blocking tasks remain in the simulated scenario. Human employer launch-readiness approval is still required.")
 
+st.markdown("#### Executive Implementation Summary")
+summary_left, summary_right = st.columns([1.2, 1])
+with summary_left:
+    st.markdown("**What the agent found**")
+    if assessment.decisions:
+        for d in assessment.decisions[:3]:
+            st.write(f"- {d.title}")
+    else:
+        st.write("- No unresolved cross-source decisions detected.")
+with summary_right:
+    st.markdown("**What the agent did**")
+    st.write("- Reconciled employer requirements across simulated systems")
+    st.write("- Identified conflicting or incomplete launch decisions")
+    st.write("- Converted meeting notes into owner-based actions")
+    st.write("- Connected employer decisions to downstream member/device readiness")
+    st.write("- Preserved supporting evidence for later questions")
+
+st.markdown("#### Implementation Path")
+st.write("Employer requirements → Eligibility & configuration → Employee communications → Launch readiness → Employee opt-in → Member app & device enablement")
+
 blueprint_tab,decisions_tab,actions_tab,devices_tab,readiness_tab,memory_tab,evidence_tab=st.tabs(["Employer Blueprint","Decisions","Actions","Member & Device Enablement","Employer Launch Readiness","Implementation Memory","Evidence"])
 
 with blueprint_tab:
