@@ -1,0 +1,17 @@
+{
+  "client_id": "DEMO-001",
+  "client_name": "Fictional Employer Group",
+  "health_plan": "Fictional Health Plan",
+  "program": "Connected Care Benefit",
+  "launch_date": "2026-11-01",
+  "eligible_population": "Employees only",
+  "estimated_eligible_members": 18500,
+  "medical_plan_population": ["Core PPO", "Value HDHP"],
+  "device_bundle": ["Connected blood pressure monitor"],
+  "member_app": "Mobile connected-care app",
+  "communication_owner": "Program delivery team",
+  "eligibility_file_cadence": "Weekly",
+  "billing_model": "Per eligible member per month",
+  "reporting": "Monthly utilization summary",
+  "implementation_status": "In progress"
+}
