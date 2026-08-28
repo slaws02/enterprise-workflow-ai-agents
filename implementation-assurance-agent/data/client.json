@@ -1,0 +1,10 @@
+{
+  "client_name": "Summit Manufacturing Group",
+  "client_type": "Employer",
+  "program_provider": "Fictional Connected Care Provider",
+  "program": "Connected Health Management Benefit",
+  "launch_date": "2026-11-01",
+  "eligible_employees": 18500,
+  "expected_opt_in_members": 3700,
+  "benefit_model": "Voluntary employee opt-in"
+}

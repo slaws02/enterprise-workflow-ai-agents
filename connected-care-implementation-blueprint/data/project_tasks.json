@@ -1,0 +1,12 @@
+[
+  {"task":"Confirm employer eligible population","domain":"Eligibility","status":"In Progress","owner":"Client Benefits + Implementation","due":"2026-09-10","dependency":"Resolve employee-only vs employee-and-spouse scope"},
+  {"task":"Validate employer eligibility file specification","domain":"Data Integration","status":"In Progress","owner":"Technical Integration","due":"2026-09-14","dependency":"Final eligibility fields and group definitions"},
+  {"task":"Configure employer program tenant","domain":"Program Configuration","status":"Complete","owner":"Product Operations","due":"2026-09-07","dependency":""},
+  {"task":"Approve employee launch communications","domain":"Communications","status":"In Progress","owner":"Client Benefits + Communications","due":"2026-09-22","dependency":"Communication ownership decision"},
+  {"task":"Approve device fulfillment file specification","domain":"Devices","status":"In Progress","owner":"Client Benefits + Operations","due":"2026-09-15","dependency":"Shipping address collection and enrolled-member workflow approval"},
+  {"task":"Complete enrolled-member test device shipment","domain":"Devices","status":"Blocked","owner":"Operations","due":"2026-09-19","dependency":"Device fulfillment file specification"},
+  {"task":"Validate connected-device readings ingestion","domain":"Data Integration","status":"Blocked","owner":"Technical Integration","due":"2026-09-18","dependency":"Sample enrolled-member IDs and device readings"},
+  {"task":"Configure employer reporting package","domain":"Reporting","status":"Not Started","owner":"Analytics","due":"2026-09-25","dependency":"Enrollment and device engagement reporting definitions"},
+  {"task":"Configure client billing","domain":"Billing","status":"Not Started","owner":"Billing Operations","due":"2026-10-01","dependency":"Final contracted eligible population and billing basis"},
+  {"task":"Employer launch readiness review","domain":"Launch","status":"Not Started","owner":"Implementation","due":"2026-10-20","dependency":"All critical employer launch criteria"}
+]

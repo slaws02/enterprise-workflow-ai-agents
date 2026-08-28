@@ -1,0 +1,20 @@
+{
+  "client_id": "DEMO-001",
+  "client_name": "Summit Manufacturing Group",
+  "client_type": "Employer",
+  "program_provider": "Fictional Connected Care Provider",
+  "program": "Connected Health Management Benefit",
+  "launch_date": "2026-11-01",
+  "benefit_model": "Voluntary employee opt-in",
+  "eligible_population": "Employees only",
+  "estimated_eligible_employees": 18500,
+  "expected_enrolled_members": 3700,
+  "eligibility_groups": ["US benefits-eligible employees"],
+  "device_bundle": ["Connected blood pressure monitor"],
+  "member_app": "Mobile connected-care app",
+  "communication_owner": "Program delivery team",
+  "eligibility_file_cadence": "Weekly",
+  "billing_model": "Per eligible employee per month",
+  "reporting": "Monthly utilization summary",
+  "implementation_status": "In progress"
+}

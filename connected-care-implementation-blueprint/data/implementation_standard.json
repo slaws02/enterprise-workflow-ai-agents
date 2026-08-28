@@ -1,0 +1,6 @@
+{
+  "required_domains": ["Eligibility","Connected Devices","Member App","Data Integration","Communications","Support","Reporting","Billing","Launch Readiness"],
+  "device_workflow": ["Eligibility confirmed","Device kit assigned","Shipping address validated","Fulfillment file approved","Test shipment completed","Member app activated","Device pairing validated","Readings sync validated","Support escalation documented","Replacement process documented"],
+  "launch_criteria": ["Eligible population approved","Critical contract requirements reconciled","Device fulfillment test complete","Device readings data validation passed","Member communications approved","Support escalation path approved","Billing setup complete","Launch readiness review complete"],
+  "guardrails": ["Surface evidence for every conflict","Do not invent missing client decisions","Recommend next actions but keep approvals human-owned","Do not change launch dates or contact members autonomously"]
+}

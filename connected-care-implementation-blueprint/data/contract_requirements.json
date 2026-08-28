@@ -1,0 +1,15 @@
+{
+  "launch_date": "2026-11-01",
+  "benefit_model": "Voluntary employee opt-in",
+  "eligible_population": "Employees and spouses",
+  "eligibility_groups": ["US benefits-eligible employees", "Eligible spouses"],
+  "expected_enrollment_rate": "20%",
+  "device_bundle": ["Connected blood pressure monitor", "Smart scale"],
+  "device_fulfillment": "Ship approved device kit only after an eligible employee or spouse enrolls in the benefit",
+  "member_app": "Mobile connected-care app with device pairing and readings sync",
+  "communication_owner": "Client benefits team",
+  "eligibility_file_cadence": "Weekly",
+  "reporting": "Monthly employer implementation, enrollment, activation, and connected-device engagement reporting",
+  "languages": ["English", "Spanish"],
+  "support": "Member support begins after enrollment and includes device setup, pairing, sync, replacement, and escalation"
+}

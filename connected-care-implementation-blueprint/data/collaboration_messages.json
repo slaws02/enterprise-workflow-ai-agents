@@ -1,0 +1,6 @@
+[
+  {"date":"2026-09-03","team":"Operations","author":"Fulfillment Lead","message":"We cannot run the test shipment until the shipping-address fields and validation rules are approved."},
+  {"date":"2026-09-04","team":"Technical Integration","author":"Integration Lead","message":"Device readings validation is waiting on test member IDs plus sample blood-pressure and weight readings."},
+  {"date":"2026-09-05","team":"Client Delivery","author":"Client Partner","message":"Client says their benefits team expects to distribute launch communications. CRM currently lists the program delivery team."},
+  {"date":"2026-09-06","team":"Member Support","author":"Support Lead","message":"We still need a documented escalation path for members who cannot pair a monitor or scale, have repeated sync failures, or need a replacement device."}
+]
